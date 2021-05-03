@@ -1,0 +1,52 @@
+------------------------------------- RPG MUSIC PACK COLLECTION --------------------------------------
+
+                                         Note to Developers
+                                         -----------------
+Greetings, fellow creatives!
+
+We at the team of Owl Theory Music thank you heartily for purchasing this music pack. Over the course of several months, we have
+searched for the best sounds and our own intuition in order to create the best possible and most inspired pieces of music that we
+have ever created. 
+
+We hope you enjoy the pack! I hope you consider leaving a review on the Unity Store so that our music can help more developers and 
+impact more lives. If you didn't, or have any questions or concerns about the pack, email me personally at alec.weesner@gmail.com
+
+-------
+
+Within this massive multi-pack, you will find 6 folders for each specific genre, and also 3 bonus tracks. Within each of these 
+folders, you will find additional folders for each song. We have created many variations in each song for the best customizable use for
+your project. Usually, a single song will have at least 2-3 different versions, each having a "Fade-Out" and a "LOOP" file. There may
+also be a "INTRO" and "REVERB TAIL" files:
+
+	() The "Fade-Out" audio file is used primarily for you to know where the different cuts are in the music, so you can easily
+		time where to combine both the "INTRO" file (if the song has one) and the "LOOP" file. Most of the time
+		though, you'll want to use just the "LOOP" and the "REVERB TAIL" to loop. The "Fade-Out" file
+		can also be used as a one-shot, as each song has a dedicated ending.
+
+	() The "LOOP" audio file is usually the beginning of the song (if the song has no "INTRO" file), and should be used first
+		if you are planning to loop. Note that sometimes you cannot use this file alone to loop, as the ending may abruptly 
+		cut-off. Use both the "LOOP", and "REVERB TAIL" at the end to allow a seamless transition.
+
+	() The "INTRO" is the very beginning of the song, that isn't repeated in a "LOOP" file. See the "How To Loop" Text Document 
+		to learn how to loop.
+
+	() The "REVERB TAIL" audio file begins directly when the "LOOP" file finishes. See the "How To Loop" Text Document to learn 
+		how to loop.
+
+-------
+
+All audio assets are rendered in WAV at 44.1 Khz and 16Bit.
+
+Drop me an email if you need custom music for your game. Always happy to help out a fellow creative!
+
+
+	alec.weesner@gmail.com
+		
+	https://soundcloud.com/alecweesner
+	https://soundcloud.com/adamweesner
+
+
+May fortune be with you! Don't forget to leave a review if you are satisfied with the RPG Music Pack! Find more of our music packs
+on the Unity Store!
+
+-----------------------
