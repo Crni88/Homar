@@ -3,9 +3,9 @@ namespace RPG.Control
 {
     public class PatrolPath : MonoBehaviour
     {
+        const float wayPointGizmoRadius = 0.3f;
         private void OnDrawGizmos()
         {
-            const float wayPointGizmoRadius = 0.3f;
             for (int i = 0; i < transform.childCount; i++)
             {
                 int j = GetNextIndex(i);
@@ -22,7 +22,6 @@ namespace RPG.Control
             }
             return i + 1;
         }
-
         public Vector3 GetWaypoint(int i)
         {
             return transform.GetChild(i).position;

@@ -13,13 +13,15 @@ namespace RPG.Combat
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float weaponDamage=5f;
         [SerializeField] float timeBetweenAttacks=1f;
+        [SerializeField] GameObject weaponPrefab=null;
+        [SerializeField] Transform handTransform=null;
 
         float timeSinceLastAttack = Mathf.Infinity;
 
         // Start is called before the first frame update
         void Start()
         {
-
+            SpawnWeapon();
         }
 
         // Update is called once per frame
@@ -38,6 +40,10 @@ namespace RPG.Combat
                 GetComponent<Mover>().Cancel();
                 AttackBehaviour();
             }
+        }
+        private void SpawnWeapon()
+        {
+            Instantiate(weaponPrefab, handTransform);
         }
 
         private void AttackBehaviour()
