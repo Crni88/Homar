@@ -10,18 +10,18 @@ namespace RPG.Combat
     {
         Health target;
 
-        [SerializeField] float weaponRange = 2f;
-        [SerializeField] float weaponDamage=5f;
         [SerializeField] float timeBetweenAttacks=1f;
-        [SerializeField] GameObject weaponPrefab=null;
         [SerializeField] Transform handTransform=null;
+        [SerializeField] Weapon defaultWeapon=null; 
 
         float timeSinceLastAttack = Mathf.Infinity;
+
+       Weapon currentWeapon=null; 
 
         // Start is called before the first frame update
         void Start()
         {
-            SpawnWeapon();
+            EquipWeapon(defaultWeapon);
         }
 
         // Update is called once per frame
@@ -41,9 +41,11 @@ namespace RPG.Combat
                 AttackBehaviour();
             }
         }
-        private void SpawnWeapon()
+        public void EquipWeapon(Weapon weapon)
         {
-            Instantiate(weaponPrefab, handTransform);
+            currentWeapon = weapon;
+            Animator animator = GetComponent<Animator>();
+            weapon.Spawn(handTransform, animator);
         }
 
         private void AttackBehaviour()
@@ -70,12 +72,12 @@ namespace RPG.Combat
             {
                 return;
             }
-            target.TakeDamage(weaponDamage);
+            target.TakeDamage(currentWeapon.GetDamage());
         }
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
@@ -95,7 +97,7 @@ namespace RPG.Combat
         }
         public void Cancel()
         {
-            StopAttack();
+            StopAttack(); 
             target = null;
         }
 

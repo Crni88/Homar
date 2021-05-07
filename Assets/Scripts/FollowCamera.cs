@@ -11,6 +11,6 @@ public class FollowCamera : MonoBehaviour
         void Update()
         {
         transform.position = target.position;
-     }
+        }
     }
 }
