@@ -12,11 +12,11 @@ namespace RPG.Combat
 
         [SerializeField] float timeBetweenAttacks=1f;
         [SerializeField] Transform handTransform=null;
-        [SerializeField] Weapon defaultWeapon=null; 
-
+        [SerializeField] Weapon defaultWeapon = null; 
+         
         float timeSinceLastAttack = Mathf.Infinity;
 
-       Weapon currentWeapon=null; 
+        Weapon currentWeapon=null; 
 
         // Start is called before the first frame update
         void Start()
