@@ -73,7 +73,20 @@ namespace RPG.Combat
             {
                 return;
             }
-            target.TakeDamage(currentWeapon.GetDamage());
+            if (currentWeapon.HasProjectile())
+            {
+                currentWeapon.LaunchProjectile(rightHandTransfrom,leftHandTransfrom,target);
+            }
+            else
+            {
+                target.TakeDamage(currentWeapon.GetDamage());
+            }
+        }
+        //Animation Event / Za luk i strijelu
+
+        void Shoot()
+        {
+            Hit();
         }
 
         private bool GetIsInRange()
