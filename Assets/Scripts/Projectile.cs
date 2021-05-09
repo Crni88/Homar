@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
 {
 
     [SerializeField] float speed = 1f;
+    [SerializeField] GameObject hitEffect = null;
+    [SerializeField] float maxLifeTime = 10;
     Health target = null;
     float damage = 0;
     // Update is called once per frame
@@ -23,6 +25,8 @@ public class Projectile : MonoBehaviour
     {
         this.target = target;
         this.damage = damage;
+
+        Destroy(gameObject, maxLifeTime);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -31,6 +35,11 @@ public class Projectile : MonoBehaviour
             return;
         }
         target.TakeDamage(damage);
+
+        if (hitEffect != null)
+        {
+            Instantiate(hitEffect, target.transform.position, transform.rotation);
+        }
         Destroy(gameObject);
     }
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2376267232725555273}
   - component: {fileID: 5204208626598876599}
+  - component: {fileID: -6718822175949119799}
   m_Layer: 0
   m_Name: PickUps
   m_TagString: Untagged
@@ -44,3 +45,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: 7e2336f6e253a5e44b326d0eca33f9a7, type: 2}
+--- !u!135 &-6718822175949119799
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2376267232725555286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
