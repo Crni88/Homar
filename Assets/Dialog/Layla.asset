@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: Layla
   dialogue:
   - "Hey you, you\u2019re finally awake. Took you long enough. What the hell happened
-    to you? You look like an Erasmus student on his first week there. Too much \u201Csocial
+    to you? You look like a student on his first week in college. Too much \u201Csocial
     lubricant\u201D in your systems? \r\n"
   - "You didn\u2019t leave last night. You left last week. (*sights*) And while you
     were gone the Emperor\u2019s men took over the village. And it\u2019s up to you
@@ -24,3 +24,6 @@ MonoBehaviour:
   playerDialogue:
   - "Wow, that\u2019s my house. I remember leaving it last night but I have no memory
     of coming here. Where is all my stuff? \r\n"
+  - '...
+
+'
