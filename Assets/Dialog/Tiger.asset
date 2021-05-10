@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aeda3aedc8b1af49bfa0c93126ae15f, type: 3}
+  m_Name: Tiger
+  m_EditorClassIdentifier: 
+  npcName: Tiger
+  dialogue:
+  - "So yeah that\u2019s how we got their asses handed to them.  We were elite of
+    the elite after all. \r\n"
+  - "Anyway, I was saying, my cousin and I \u2026 bam best duo in the world. No army
+    could match our skill. \r\n"
+  playerDialogue:
+  - "Ugh it\u2019s the same story again. Yeah, I know that your unit managed to fight
+    off the numerically superior enemy while in complete isolation and save the Empire.
+    I have no time for this. \r\n"
+  - ...
