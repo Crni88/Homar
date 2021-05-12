@@ -1,4 +1,4 @@
-using RPG.Core;
+using RPG.Resources;
 using System;
 using UnityEngine;
 

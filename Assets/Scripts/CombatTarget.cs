@@ -1,9 +1,9 @@
-using RPG.Core;
 using UnityEngine;
+using RPG.Resources;
 
 namespace RPG.Combat
 {
-    [RequireComponent(typeof(Health))]
+    [RequireComponent(typeof(Resources.Health))]
     public class CombatTarget : MonoBehaviour
     {
         // Start is called before the first frame update

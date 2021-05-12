@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: timeBetweenAttacks
       value: 1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 1053665093131548644, guid: a524506f08bcc054fbccd41f147abc5f, type: 3}
+      propertyPath: charactherClass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1673757427811951159, guid: a524506f08bcc054fbccd41f147abc5f, type: 3}
       propertyPath: m_Name
       value: Archer

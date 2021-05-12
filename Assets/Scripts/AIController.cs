@@ -1,10 +1,11 @@
 using RPG.Combat;
-using RPG.Core;
+using RPG.Resources;
 using RPG.Movement;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RPG.Core;
 
 namespace RPG.Control
 {
@@ -18,7 +19,7 @@ namespace RPG.Control
 
         Fighter enemy;
         GameObject player;
-        Health health;
+        Resources.Health health;
         Mover mover;
 
         Vector3 guardPosition;
@@ -30,7 +31,7 @@ namespace RPG.Control
         private void Start()
         {
             enemy = GetComponent<Fighter>();
-            health = GetComponent<Health>();
+            health = GetComponent<Resources.Health>();
             mover = GetComponent<Mover>();
             player = GameObject.FindWithTag("Player");
             guardPosition = transform.position;

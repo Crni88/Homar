@@ -10,8 +10,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 1.03
+  m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &832838432546994231
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0ea85e005ebc94b9cfbce73091550d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseDistance: 10
+  chaseDistance: 7
   suspicionTime: 6
   waypointTolerance: 1
   patrolPath: {fileID: 0}
@@ -194,13 +194,14 @@ PrefabInstance:
       objectReference: {fileID: 6176727219905578618}
     - target: {fileID: 7280026585968659142, guid: 716b458cd0327de4ca3b98255682d32b, type: 3}
       propertyPath: timeBetweenAttacks
-      value: 1.14
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 8720400244459696941, guid: 716b458cd0327de4ca3b98255682d32b, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1100690283857564264, guid: 716b458cd0327de4ca3b98255682d32b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 716b458cd0327de4ca3b98255682d32b, type: 3}
 --- !u!1 &1673757427811951159 stripped
 GameObject:

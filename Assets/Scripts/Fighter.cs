@@ -1,14 +1,14 @@
 using RPG.Core;
 using RPG.Movement;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using RPG.Resources;
+using RPG.Stats;
+
 namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        Health target;
+        Resources.Health target;
 
         [SerializeField] float timeBetweenAttacks=1f;
         [SerializeField] Transform rightHandTransfrom=null;
@@ -100,14 +100,14 @@ namespace RPG.Combat
             {
                 return false;
             }
-            Health targetTest = combatTarget.GetComponent<Health>();
+            Resources.Health targetTest = combatTarget.GetComponent<Resources.Health>();
             return targetTest != null && !targetTest.IsDead();
         }
 
         public void Attack(GameObject combatTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
-            target = combatTarget.GetComponent<Health>();
+            target = combatTarget.GetComponent<Resources.Health>();
         }
         public void Cancel()
         {

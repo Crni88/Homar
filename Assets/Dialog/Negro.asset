@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aeda3aedc8b1af49bfa0c93126ae15f, type: 3}
+  m_Name: Negro
+  m_EditorClassIdentifier: 
+  npcName: 
+  dialogue:
+  - "What are you looking for? There are no Easter eggs here. There is no hidden
+    level. *Under breath* Not yet. You\u2019ve reached the end of this game. This
+    road leads to the next area but that\u2019s still under construction. \r\n"
+  - "Oh, we\u2019re going to have dragons and wolves and giant eagles you could ride
+    and stuff. At least that\u2019s the plan. \r\n"
+  playerDialogue:
+  - "\tWhat happens there? \r\n"

@@ -1,3 +1,4 @@
+using RPG.Stats;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,11 @@ namespace RPG.Core
         [SerializeField] float healthPoints = 100f;
         bool isDead = false;
 
+        private void Start()
+        {
+            healthPoints = GetComponent<BaseStats>().GetHealth();   
+        }
+         
         public bool IsDead()
         {
             return isDead;

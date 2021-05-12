@@ -5,18 +5,20 @@ using UnityEngine;
 using UnityEngine.AI;
 using RPG.Core;
 
+using RPG.Resources;
+
 namespace RPG.Movement
 {
     public class Mover : MonoBehaviour,IAction
     {
         [SerializeField] Transform target;
         private NavMeshAgent navMeshAgent;
-        Health health;
+        Resources.Health health;
 
         private void Start()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
-            health = GetComponent<Health>();
+            health = GetComponent<Resources.Health>();
         }
         // Update is called once per frame
         void Update()
