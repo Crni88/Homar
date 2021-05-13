@@ -19,7 +19,7 @@ namespace RPG.Stats
             }
             return 0;
         }
-          
+           
         [System.Serializable]
         class ProgressionCharacterClass
         {
