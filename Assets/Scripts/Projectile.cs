@@ -13,6 +13,7 @@ namespace RPG.Combat
         [SerializeField] float maxLifeTime = 10;
         Health target = null;
         float damage = 0;
+        GameObject instigator = null;
         // Update is called once per frame
         void Update()
         {
@@ -23,11 +24,11 @@ namespace RPG.Combat
             transform.LookAt(target.transform.position);
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target, GameObject instigator, float damage)
         {
             this.target = target;
-            this.damage = damage;
-
+            this.damage = damage;   
+            this.instigator = instigator;
             Destroy(gameObject, maxLifeTime);
         }
         private void OnTriggerEnter(Collider other)
@@ -36,7 +37,7 @@ namespace RPG.Combat
             {
                 return;
             }
-            target.TakeDamage(damage);
+            target.TakeDamage(instigator,damage);
 
             if (hitEffect != null)
             {

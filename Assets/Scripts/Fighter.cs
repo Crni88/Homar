@@ -44,10 +44,16 @@ namespace RPG.Combat
         }
         public void EquipWeapon(Weapon weapon)
         {
+
             currentWeapon = weapon;
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(rightHandTransfrom, leftHandTransfrom, animator);
         }
+
+        public Health GetTarget()
+        {
+            return target;
+        } 
 
         private void AttackBehaviour()
         {
@@ -75,11 +81,11 @@ namespace RPG.Combat
             }
             if (currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransfrom,leftHandTransfrom,target);
+                currentWeapon.LaunchProjectile(rightHandTransfrom, leftHandTransfrom, target, gameObject);
             }
             else
             {
-                target.TakeDamage(currentWeapon.GetDamage());
+                target.TakeDamage(gameObject, currentWeapon.GetDamage());
             }
         }
         //Animation Event / Za luk i strijelu

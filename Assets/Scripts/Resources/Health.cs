@@ -1,5 +1,6 @@
 using RPG.Core;
 using RPG.Stats;
+using System;
 using UnityEngine;
 namespace RPG.Resources
 {
@@ -18,13 +19,29 @@ namespace RPG.Resources
             return isDead;
         }
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject player,float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage,0);
             if (healthPoints == 0)
             {
                 Die();
+                AwardXP(player);
             }
+        }
+
+        private void AwardXP(GameObject player)
+        {
+            Experience experience = player.GetComponent<Experience>();
+            if (experience == null)
+            {
+                return;
+            }
+            experience.GainExperience(GetComponent<BaseStats>().GetXPReward());
+        }
+
+        public float GetPercentageHealth()
+        {
+            return 100*(healthPoints / GetComponent<BaseStats>().GetHealth());
         }
 
         private void Die()

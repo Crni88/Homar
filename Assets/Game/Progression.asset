@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterClasses:
   - characterClass: 0
-    health:
-    - 50
-    - 100
-    - 200
-    - 500
-    - 700
+    stats:
+    - stats: 0
+      levels:
+      - 50
+      - 100
+      - 200
+      - 400
+      - 672.7
   - characterClass: 1
-    health:
-    - 15
-    - 20
-    - 30
-    - 40
-    - 50
-  - characterClass: 2
-    health: []
+    stats:
+    - stats: 0
+      levels:
+      - 40
   - characterClass: 3
-    health:
-    - 0
+    stats:
+    - stats: 0
+      levels:
+      - 30
