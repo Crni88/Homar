@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aeda3aedc8b1af49bfa0c93126ae15f, type: 3}
+  m_Name: Flor
+  m_EditorClassIdentifier: 
+  npcName: Flor
+  dialogue:
+  - "So when the transition of power didn\u2019t go in Dunstan\u2019s favor he did
+    what any spoiled brat would do. Planned to kill his father. By the way what happened
+    to your head? \r\n"
+  - "Oh, he did something radical. He chose to give the throne to his younger daughter.
+    \r\n"
+  playerDialogue:
+  - 'Who did Emperor choose as his successor then?
+
+'
+  - ...

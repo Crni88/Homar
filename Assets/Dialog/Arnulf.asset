@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aeda3aedc8b1af49bfa0c93126ae15f, type: 3}
+  m_Name: Arnulf
+  m_EditorClassIdentifier: 
+  npcName: Arnulf
+  dialogue:
+  - "Call down Rambo. If this map was any bigger you could take out the whole division
+    of the \u201CBlues\u201D. The old Dunstan wouldn\u2019t be pretty happy about
+    that. \r\n"
+  - "It is. And a pretty good one at that. But these maggots decided to take the
+    name for themselves. I guess he named them after he finished planning how he
+    will take the kingdom for himself. You should try and find Flor, ask her she\u2019s
+    been closer to the man himself. \r\n"
+  playerDialogue:
+  - "\u201CBlues\u201D? Isn\u2019t that a music genre? Also, isn\u2019t Dunstan Emperors\u2019
+    oldest son? Any idea about what\u2019s going on? \r\n"
+  - ...

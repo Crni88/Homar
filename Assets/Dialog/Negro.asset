@@ -18,6 +18,8 @@ MonoBehaviour:
     level. *Under breath* Not yet. You\u2019ve reached the end of this game. This
     road leads to the next area but that\u2019s still under construction. \r\n"
   - "Oh, we\u2019re going to have dragons and wolves and giant eagles you could ride
-    and stuff. At least that\u2019s the plan. \r\n"
+    and stuff. At least that\u2019s the plan if our developer doesn\u2019t forget
+    about this project just like the rest of them. \r\n"
   playerDialogue:
-  - "\tWhat happens there? \r\n"
+  - "What happens there? \r\n"
+  - ...

@@ -19,7 +19,6 @@ MonoBehaviour:
   - "Anyway, I was saying, my cousin and I \u2026 bam best duo in the world. No army
     could match our skill. \r\n"
   playerDialogue:
-  - "Ugh it\u2019s the same story again. Yeah, I know that your unit managed to fight
-    off the numerically superior enemy while in complete isolation and save the Empire.
-    I have no time for this. \r\n"
+  - "Ugh, can somebody please explain what is going on here? I have no time for this.
+    \r\n"
   - ...

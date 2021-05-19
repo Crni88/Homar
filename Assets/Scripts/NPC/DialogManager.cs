@@ -1,3 +1,4 @@
+using RPG.Control;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,10 +8,10 @@ public class DialogManager : MonoBehaviour
 {
     public NPC npc;
 
-    bool isTalking = false;
+    public bool isTalking = false;
     float distance;
     float currentResponseTracker = 0;
-    
+
     public GameObject player;
     public GameObject dialogUI;
 
@@ -27,7 +28,7 @@ public class DialogManager : MonoBehaviour
     private void OnMouseOver()
     {
         distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (distance<=20f)
+        if (distance <= 20f)
         {
             //if (Input.GetAxisRaw("Mouse ScrollWheel") > 0)
             //{
@@ -82,16 +83,31 @@ public class DialogManager : MonoBehaviour
         dialogUI.SetActive(true);
         npcName.text = npc.npcName;
         npcDialogBox.text = npc.dialogue[0];
+        DisableMovement();
         print("Pocetak dijaloga...");
+    }
+
+    private static void DisableMovement()
+    {
+        GameObject.FindWithTag("Player").GetComponent<RPG.Movement.Mover>().enabled = false;
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().enabled = false;
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     private void EndDialog()
     {
+        print("MOze se kretat...");
         isTalking = false;
         dialogUI.SetActive(false);
-        Cursor.lockState = CursorLockMode.None;
+        EnableMovement();
         print("Kraj dijaloga...");
     }
 
+    private static void EnableMovement()
+    {
+        GameObject.FindWithTag("Player").GetComponent<RPG.Movement.Mover>().enabled = true;
+        GameObject.FindWithTag("Player").GetComponent<PlayerController>().enabled = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
 }

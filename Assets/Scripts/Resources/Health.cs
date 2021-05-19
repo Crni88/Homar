@@ -50,6 +50,7 @@ namespace RPG.Resources
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+            GetComponent<Movement.Mover>().enabled = false;
         }
     }
 } 
