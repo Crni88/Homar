@@ -1,6 +1,7 @@
 using RPG.Core;
 using RPG.Stats;
 using System;
+using System.Collections;
 using UnityEngine;
 namespace RPG.Resources
 {
@@ -13,6 +14,7 @@ namespace RPG.Resources
         {
             healthPoints = GetComponent<BaseStats>().GetStat(Stats.Stats.Health);   
         }
+
 
         public bool IsDead()
         {
