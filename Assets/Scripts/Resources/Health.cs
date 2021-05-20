@@ -8,7 +8,7 @@ namespace RPG.Resources
     {
         [SerializeField] float healthPoints = 100f;
         bool isDead = false;
-
+        public GameObject player;
         private void Start()
         {
             healthPoints = GetComponent<BaseStats>().GetStat(Stats.Stats.Health);   
