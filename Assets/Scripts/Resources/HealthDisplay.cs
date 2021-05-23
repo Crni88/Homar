@@ -16,7 +16,7 @@ namespace RPG.Resources
         }
         private void Update()
         {
-            GetComponent<Text>().text = String.Format("{0:00}%", health.GetPercentageHealth());     
-    }
+            GetComponent<Text>().text = string.Format("{0:N2}", health.GetPercentageHealth());
+        }
     }
 }

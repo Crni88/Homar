@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0ea85e005ebc94b9cfbce73091550d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseDistance: 7
+  chaseDistance: 10
   suspicionTime: 6
   waypointTolerance: 1
   patrolPath: {fileID: 0}
@@ -194,7 +194,7 @@ PrefabInstance:
       objectReference: {fileID: 6176727219905578618}
     - target: {fileID: 7280026585968659142, guid: 716b458cd0327de4ca3b98255682d32b, type: 3}
       propertyPath: timeBetweenAttacks
-      value: 1.18
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 8720400244459696941, guid: 716b458cd0327de4ca3b98255682d32b, type: 3}
       propertyPath: m_Name

@@ -18,8 +18,8 @@ namespace RPG.Combat{
                 GetComponent<Text>().text = "N/A";
                 return;
             }
-            Health health = fighter.GetTarget(); 
-            GetComponent<Text>().text = health.GetPercentageHealth() + "%";
+            Health health = fighter.GetTarget();
+            GetComponent<Text>().text = string.Format("{0:N2}", health.GetPercentageHealth());
         }
     }
 

@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Flor
   dialogue:
-  - "So when the transition of power didn\u2019t go in Dunstan\u2019s favor he did
-    what any spoiled brat would do. Planned to kill his father. By the way what happened
-    to your head? \r\n"
-  - "Oh, he did something radical. He chose to give the throne to his younger daughter.
+  - "Hello there. How can I help you? Why does your head look like \u201CCocin bubanj\u201D? 
+    \r\n"
+  - "Emperor did something radical. He chose to give the throne to his younger daughter.
+    Big no no if you ask pretty much anyone. Go find Negro for further instructions. 
     \r\n"
   playerDialogue:
-  - 'Who did Emperor choose as his successor then?
-
-'
+  - "Arnulf told me to come looking for you so you can tell me what is going on.
+    \r\n"
   - ...

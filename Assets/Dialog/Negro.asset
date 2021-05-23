@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aeda3aedc8b1af49bfa0c93126ae15f, type: 3}
   m_Name: Negro
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Negro
   dialogue:
   - "What are you looking for? There are no Easter eggs here. There is no hidden
     level. *Under breath* Not yet. You\u2019ve reached the end of this game. This
     road leads to the next area but that\u2019s still under construction. \r\n"
   - "Oh, we\u2019re going to have dragons and wolves and giant eagles you could ride
     and stuff. At least that\u2019s the plan if our developer doesn\u2019t forget
-    about this project just like the rest of them. \r\n"
+    about this project just like the rest of them. Anyway, that\u2019s what is waiting
+    for you in Homar 2.\r\n"
   playerDialogue:
   - "What happens there? \r\n"
   - ...

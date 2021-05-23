@@ -8,13 +8,30 @@ namespace RPG.Resources
     public class Health : MonoBehaviour
     {
         [SerializeField] float healthPoints = 100f;
+
         bool isDead = false;
         public GameObject player;
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetStat(Stats.Stats.Health);   
-        }
+            healthPoints = GetComponent<BaseStats>().GetStat(Stats.Stats.Health); 
+           // StartCoroutine(addHealth());
 
+        }
+        public IEnumerator addHealth()
+        {
+            while (true)
+            { // loops forever...
+                if (healthPoints < 100)
+                { // if health < 100...
+                    healthPoints += 1; // increase health and wait the specified time
+                    yield return new WaitForSeconds(1);
+                }
+                else
+                { // if health >= 100, just yield 
+                    yield return null;
+                }
+            }
+        }
 
         public bool IsDead()
         {
@@ -43,7 +60,7 @@ namespace RPG.Resources
 
         public float GetPercentageHealth()
         {
-            return 100*(healthPoints / GetComponent<BaseStats>().GetStat(Stats.Stats.Health));
+            return 50*(healthPoints / GetComponent<BaseStats>().GetStat(Stats.Stats.Health));
         }
 
         private void Die()
@@ -53,6 +70,7 @@ namespace RPG.Resources
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
             GetComponent<Movement.Mover>().enabled = false;
+            StopCoroutine(addHealth());
         }
     }
 } 

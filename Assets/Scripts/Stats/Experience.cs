@@ -16,5 +16,9 @@ namespace RPG.Stats
         {
             return experiencePoints;
         }
+        public float Gold()
+        {
+            return 10;
+        }
     }
 }
